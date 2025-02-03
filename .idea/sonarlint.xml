@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SonarLintProjectSettings">
+    <option name="moduleMapping">
+      <map>
+        <entry key="config-service" value="server-config" />
+        <entry key="discovery-service" value="discovery-server" />
+        <entry key="gateway-service" value="api-gateway" />
+        <entry key="order-service" value="employee-service" />
+        <entry key="product-service" value="product" />
+      </map>
+    </option>
+  </component>
+</project>

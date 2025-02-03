@@ -4,18 +4,18 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://192.168.56.1:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
 
 spring:
   cloud:
     gateway:
       routes:
-        - id: orderservice-service
-          uri: lb://orderservice-service
+        - id: orders-service
+          uri: lb://order-service
           predicates:
-            - Path=/orderservice-api/**
+            - Path=/order-api/**
           filters:
-            - RewritePath=/orderservice-api/(?<path>.*), /$\{path}
+            - RewritePath=/order-api/(?<path>.*), /$\{path}
         - id: product-service
           uri: lb://product-service
           predicates:
